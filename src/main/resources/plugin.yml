@@ -1,0 +1,6 @@
+name: BowWars
+version: '${project.version}'
+main: mc.bowwars.net.bowwars.BowWars
+api-version: 1.18
+authors: [ pleer__gr45 ]
+description: Special plugin for Bow wars

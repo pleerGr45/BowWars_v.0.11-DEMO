@@ -1,0 +1,31 @@
+name: BowWarsPlugin
+author: pleer__gr45
+main: mc.bowwars.BowWars
+version: '0.11-DEMO'
+api-version: 1.18
+description: Special plugin for Bow wars
+commands:
+  bowwarsplugin:
+    description: bow wars main command
+    usage: /bwp [ARGUMENTS] <--
+    aliases: [bwp]
+  bowwarspluginteam:
+    description: bow wars team command
+    usage: /bwpt [ARGUMENTS] <--
+    aliases: [bwpt]
+  teamselector:
+    description: The command that causes the team selection
+    usage: /bwpts [ARGUMENTS] <--
+    aliases: [ bwpts ]
+  bwpgens:
+    description: The command installing generators
+    usage: /bwpgens [ARGUMENTS] <--
+    aliases: [ gens ]
+  bwptrader:
+    description: The command installing traders
+    usage: /bwptrader [ARGUMENTS] <--
+    aliases: [ trader ]
+  bwptime:
+    description: The command time
+    usage: /bwptime [SECONDS] <-- 0 < x < 3600
+    aliases: [ time ]

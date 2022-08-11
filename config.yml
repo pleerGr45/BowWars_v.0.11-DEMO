@@ -1,0 +1,50 @@
+messages:
+  commands:
+    error: ^&c Произошла ошибка при выполнении данной команды
+    do_not_have_permissions: ^&c Недостаточно прав для использования команды
+    bwp_start: ^&a Игра запущена
+    bwp_already_start: ^&c Игра уже запущена
+    bwp_start_game_thread_exception: ^&c Игровой поток был прерван по неизвестной причине
+    bwp_start_null_base_location: ^&c Положение базы команды не должно быть = &lnull. &rИспользуйте команде &e/bwp setbase&r, &cчтобы установить местоположение базы
+    bwp_already_stop: ^&c Игра и так остановлена
+    bwp_setbase:
+      team: ^&a База команды &rустановлена
+      team_null: ^&c Неизвестная команда
+      null: ^&c Аргумент не найден &8| &l&e/bwp setbase &r&4[ ARGUMENTS ] &r<-- &8| &cred, &9blue, &eyellow, &agreen
+      not_args: ^&c Недостаточно аргументов &8| &l&e/bwp setbase &r&4[ ARGUMENTS ] &r<-- &8| &cred, &9blue, &eyellow, &agreen
+      not_coord: ^&c Недостаточно аргументов &8| &l&e/bwp setbase &r&4[ ARGS ] [ COORDINATES ] &r<--
+      warn_coord: ^&c Неверные координаты
+    bwp_target:
+      set:
+        target: ^&a Мишень команды установлена
+        null_team: ^&c Неизвестная команда
+        usage: ^&c Недостаточно аргументов &8| &l&e/bwp target set &r&4[ TEAM ] [ COORDINATES ]<--
+      remove:
+        target: ^&a Мишень команды &rудалена
+        null_team: ^&c Неизвестная команда
+        max_remove: ^&c Все мишени данной команды удалены
+        usage: ^&c Недостаточно аргументов &8| &l&e/bwp target remove &r&4[ TEAM ][ INDEX ] <--
+      null: ^&a Недостаточно аргументов &8| &l&e/bwp target &r&4 [ ARGS ] <-- &r| set, remove
+    bwp_team:
+      not_args: ^&c Недостаточно аргументов &8| &l&e/bwpt &r&4[ ARGUMENTS ] &r<-- &8| &rjoin, leave, list, throw, kick
+      null_join: ^&c Недостаточно аргументов &8| &l&e/bwpt join &r&4[ TEAM ] &r<-- &8| &cred, &9blue, &eyellow, &agreen
+      null_throw: ^&c Недостаточно аргументов &8| &l&e/bwpt throw &r&4[ TEAM ] &r<-- &8| &cred, &9blue, &eyellow, &agreen &8| &r&4[ PLAYER ]
+      null_kick: ^&c Недостаточно аргументов &8| &l&e/bwpt kick &r&4[ PLAYER ] &r<--
+      null_list: ^&c Недостаточно аргументов &8| &l&e/bwpt list &r&4[ TEAM ] &r<-- &8| &cred, &9blue, &eyellow, &agreen |
+      throw_not_online_player: ^&c Данный игрок не на сервере, или его не существует
+      throw_already_in_command: Этот игрок уже состоит в команде
+      throw_not_in_the_team: Этот игрок и так не состоит в команде
+      already_in_command: ^&c Вы уже состоите в команде
+      not_in_the_team: ^&c Вы и так не состоите в команде
+      void_team: ^&a Команда пуста
+    bwp_center:
+      success: ^&aЦентр карты установлен
+      usage: ^&c Недостаточно аргументов &8| &l&e/bwp center &r&4[ COORDINATES ] <--
+    bwp_help_0: ^&e ------------+&2BWP &aHelp&e+------------
+    bwp_help_1: ^&2&lstart &r- &aЗапускает игру
+    bwp_help_2: ^&2&lstop &r- &aОстанавливает игру
+    bwp_help_3: ^&2&lsetbase [TEAM] [COORD] &r- &aУстанавливает координаты базы игру
+    bwp_help_4: ^&2&ltarget [SET] [TEAM] [COORD] &r- &aУстанавливает мишень команды
+    bwp_help_5: ^&2&ltarget [REMOVE] [TEAM] [INDEX] &r- &aУдаляет мишень команды
+  events:
+    player_death: ^&c Вы погибли
